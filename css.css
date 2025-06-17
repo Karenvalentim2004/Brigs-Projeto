@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #d9f4fb
+  overflow: hidden;
+}
+nav {
+  background-color: #d9f4fb;
+  overflow: hidden;
+}
+
+footer {
+  background-color: #d9f4fb;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color:#d9f4fb;
+  z-index: 9999;
+}
