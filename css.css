@@ -1,10 +1,37 @@
 .navbar {
-  background-color: #d9f4fb overflow: hidden;
+  background-color: #d9f4fb; 
+  height: 100px;
+  font-size: 18px;
+}
+
+ul.dropdown-menu {
+  z-index: 9999;
+  background-color: whites;
+  position: absolute;
 }
 
 nav {
   background-color: #d9f4fb;
-  overflow: hidden;
+}
+
+.navbar .logo {
+  height: 90px;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #d9f4fb; 
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+}
+
+.card-group .card img {
+  height: 250px;
+  object-fit: cover;
 }
 
 /* RESET E BASE */
@@ -48,21 +75,7 @@ body {
   to {
     transform: rotate(360deg);
   }
-}
-
-/* CABEÇALHO */
-header {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: #d9f4fb;
-  animation: fadeIn 1s ease-in;
-}
-
-header h1 {
-  font-family: 'Pacifico', cursive;
-  font-size: 3rem;
-  margin: 0.5rem 0;
-}
+}\
 
 /* SEÇÕES */
 section {
@@ -166,18 +179,6 @@ section {
 .btn:hover {
   background-color: #b48ae6;
   transform: scale(1.05);
-}
-
-/* RODAPÉ */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #d9f4fb; 
-  font-size: 0.9rem;
-  position: absolute;
-  bottom: 0%;
-  width: 100%;
-  animation: fadeIn 1s ease-in;
 }
 
 /* FORMULÁRIO */

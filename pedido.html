@@ -11,41 +11,36 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Brigs Confeitaria</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Galeria</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Cardápio
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Doces</a></li>
-                            <li><a class="dropdown-item" href="#">Ovos de páscoa</a></li>
-                            <li><a class="dropdown-item" href="#">Bolos</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Novidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Faça seu pedido</a>
-                    </li>
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="Imagens/logo2.png" alt="Brigs Logo" class="logo me-2">
+            Brigs Confeitaria
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Galeria</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">Cardápio</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Doces</a></li>
+                  <li><a class="dropdown-item" href="#">Ovos de Páscoa</a></li>
+                  <li><a class="dropdown-item" href="#">Bolos</a></li>
                 </ul>
-            </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Novidades</a></li>
+              <li class="nav-item"><a class="nav-link" href="pedido.html">Faça seu pedido</a></li>
+            </ul>
+          </div>
         </div>
+      </nav>
     </nav>
 
     <section class="formulario container my-5">
@@ -71,9 +66,9 @@
         </form>
     </section>
 
-    <footer class="text-center py-3 bg-light">
-        <p>&copy; 2025 Brigs Confeitaria. Feito com carinho.</p>
-    </footer>
+    <footer class="text-center py-3">
+        <p class="mb-0">&copy; 2025 Brigs Confeitaria. Feito com carinho.</p>
+      </footer>
 
     <script>
         function enviarPedido() {
