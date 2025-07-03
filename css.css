@@ -34,7 +34,7 @@ footer {
   object-fit: cover;
 }
 
-/* RESET E BASE */
+
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +48,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ANIMAÇÃO DE CARREGAMENTO */
+
 #preloader {
   position: fixed;
   top: 0;
@@ -75,9 +75,9 @@ body {
   to {
     transform: rotate(360deg);
   }
-}\
+}
 
-/* SEÇÕES */
+
 section {
   padding: 2rem 1rem;
   max-width: 900px;
@@ -163,7 +163,7 @@ section {
   margin-bottom: 0.5rem;
 }
 
-/* BOTÃO */
+
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -181,7 +181,7 @@ section {
   transform: scale(1.05);
 }
 
-/* FORMULÁRIO */
+
 .formulario label {
   display: block;
   margin: 0.5rem 0 0.2rem;
