@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brigs Confeitaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="Imagens/logo2.png" alt="Brigs Logo" class="logo me-2">
+                Brigs Confeitaria
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="feedback.html">Feedbacks</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Cardápio</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="doces.html">Doces</a></li>
+                            <li><a class="dropdown-item" href="ovosdepascoa.html">Ovos de Páscoa</a></li>
+                            <li><a class="dropdown-item" href="bolos.html">Bolos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="presentes.html">Presentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="novidades.html">Novidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pedido.html">Faça seu pedido</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-3 text-center bg-white">
+        <div class="container">
+            <h1 class="display-4">NOVIDADES</h1>
+        </div>
+    </header>
+
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="Imagens/pao de mel.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">PÃO DE MEL</h5>
+                    <p class="card-text">Delicioso pão de mel, com recheio de doce de leite, banhado no chocolate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="Imagens/bolo no pote.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">BOLO DE POTE</h5>
+                    <p class="card-text">Bolo no pote de diversificados sabores.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="text-center py-3">
+        <p class="mb-0">&copy; 2025 Brigs Confeitaria. Feito com carinho.</p>
+    </footer>
+
+
+    <div class="modal fade" id="imagemModal" tabindex="-1" aria-labelledby="imagemModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 text-center">
+                    <img src="" id="imagemModalSrc" class="img-fluid rounded" alt="Imagem Ampliada">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.querySelectorAll('.img-fluid').forEach(img => {
+            img.addEventListener('click', function () {
+                const modalImg = document.getElementById('imagemModalSrc');
+                modalImg.src = this.src;
+                const modal = new bootstrap.Modal(document.getElementById('imagemModal'));
+                modal.show();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
